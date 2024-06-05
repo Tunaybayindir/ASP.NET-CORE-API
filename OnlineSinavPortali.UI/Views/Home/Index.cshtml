@@ -1,0 +1,22 @@
+﻿<div class="jumbotron bg-light text-dark">
+    <div class="container">
+        <br />
+        <h1 class="display-4">Online Sınav Portalına Hoş Geldiniz- Admin Portali</h1>
+        <p class="lead"></p>
+        <hr class="my-4">
+        <br />
+        <br />
+        <br />
+    </div>
+</div>
+
+@section Scripts {
+
+    <script>
+        var token = localStorage.getItem("token");
+        if (token == "" || token == null) {
+            location.href = "/Home/Login";
+            return false;
+        }
+    </script>
+}
